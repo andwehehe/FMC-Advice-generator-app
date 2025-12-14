@@ -75,7 +75,6 @@ body {
   margin-inline: 1rem;
   padding: 2rem;
   border-radius: 1rem;
-  width: clamp(288px, 90vw, 50rem);
   background-color: var(--blue-900);
 }
 
@@ -131,4 +130,10 @@ body {
 
 .generator-btn:active {
   transform: scale(1);
+}
+
+@media (min-width: 768px) {
+  .advice-component {
+    width: clamp(20rem, 30vw, 50rem);
+  }
 }

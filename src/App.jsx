@@ -70,7 +70,7 @@ function App() {
       <article className="advice-component">
         <h1 className="advice-number" key={adviceInfo?.slip?.advice}>ADVICE #{generatedNumber !== undefined ? generatedNumber : "117"}</h1>
         <p className="random-advice" key={adviceInfo?.slip?.id}>
-          {rollingAdvice !== "" ? rollingAdvice : "It is easy to sit up and take notice, what's difficult is getting up and taking action."}
+          {rollingAdvice !== "" ? rollingAdvice : `"It is easy to sit up and take notice, what's difficult is getting up and taking action."`}
         </p>
         <img src={isMobile ? patternDividerMobile : patternDividerDesktop} alt="divider" className="divider" />
         <button className="generator-btn" onClick={getRandomAdvice}>
